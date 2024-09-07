@@ -1,0 +1,102 @@
+[
+    {
+        "name": "John Doe",
+        "image": "image/worker/01.png",
+        "title": "Head Chef",
+        "social": {
+            "facebook": "https://facebook.com/john.doe",
+            "instagram": "https://instagram.com/john.doe",
+            "twitter": "https://twitter.com/john_doe"
+        }
+    },
+    {
+        "name": "Sarah Johnson",
+        "image": "image/worker/08.png",
+        "title": "Sous Chef",
+        "social": {
+            "facebook": "https://facebook.com/sarah.johnson",
+            "instagram": "https://instagram.com/sarah.johnson",
+            "twitter": "https://twitter.com/sarah_johnson"
+        }
+    },
+    {
+        "name": "Emily Brown",
+        "image": "image/worker/03.png",
+        "title": "Pastry Chef",
+        "social": {
+            "facebook": "https://facebook.com/emily.brown",
+            "instagram": "https://instagram.com/emily.brown",
+            "twitter": "https://twitter.com/emily_brown"
+        }
+    },
+    {
+        "name": "Michael Smith",
+        "image": "image/worker/04.png",
+        "title": "Restaurant Manager",
+        "social": {
+            "facebook": "https://facebook.com/michael.smith",
+            "instagram": "https://instagram.com/michael.smith",
+            "twitter": "https://twitter.com/michael_smith"
+        }
+    },
+    {
+        "name": "Linda Davis",
+        "image": "image/worker/05.png",
+        "title": "Waitstaff Supervisor",
+        "social": {
+            "facebook": "https://facebook.com/linda.davis",
+            "instagram": "https://instagram.com/linda.davis",
+            "twitter": "https://twitter.com/linda_davis"
+        }
+    },
+    {
+        "name": "James Wilson",
+        "image": "image/worker/06.png",
+        "title": "Bartender",
+        "social": {
+            "facebook": "https://facebook.com/james.wilson",
+            "instagram": "https://instagram.com/james.wilson",
+            "twitter": "https://twitter.com/james_wilson"
+        }
+    },
+    {
+        "name": "Sophia Martinez",
+        "image": "image/worker/07.png",
+        "title": "Waitress",
+        "social": {
+            "facebook": "https://facebook.com/sophia.martinez",
+            "instagram": "https://instagram.com/sophia.martinez",
+            "twitter": "https://twitter.com/sophia_martinez"
+        }
+    },
+    {
+        "name": "David Clark",
+        "image": "image/worker/08.png",
+        "title": "Line Cook",
+        "social": {
+            "facebook": "https://facebook.com/david.clark",
+            "instagram": "https://instagram.com/david.clark",
+            "twitter": "https://twitter.com/david_clark"
+        }
+    },
+    {
+        "name": "Olivia Rodriguez",
+        "image": "image/worker/09.png",
+        "title": "Hostess",
+        "social": {
+            "facebook": "https://facebook.com/olivia.rodriguez",
+            "instagram": "https://instagram.com/olivia.rodriguez",
+            "twitter": "https://twitter.com/olivia_rodriguez"
+        }
+    },
+    {
+        "name": "Henry Walker",
+        "image": "image/worker/10.png",
+        "title": "Dishwasher",
+        "social": {
+            "facebook": "https://facebook.com/henry.walker",
+            "instagram": "https://instagram.com/henry.walker",
+            "twitter": "https://twitter.com/henry_walker"
+        }
+    }
+]

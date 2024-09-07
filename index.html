@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" class="center">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive Web Development">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="MD. MUSHFIQUR RAHMAN">
+    <title>Document</title>
+
+    <!-- style file link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font awasome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- nav section -->
+    <nav class="center" id="nav_section"></nav>
+
+    <!-- slider section -->
+    <section id="slide_section" class="center">
+        <div class="context_container">
+            <div id="slider"></div>
+        </div>
+    </section>
+
+    <!-- about section -->
+    <section id="about_section" class="center">
+        <div class="context_container center">
+            <div class="image_context center">
+                <img src="image/shope.png">
+            </div>
+            <div class="text_context center">
+                <h1 id="title">About Us</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda odit laudantium, ad aperiam
+                    quibusdam veritatis nesciunt dolore? Deserunt alias, maxime inventore omnis in, magni doloribus ad
+                    quam nobis labore laborum?<br><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Assumenda odit laudantium, ad aperiam quibusdam veritatis nesciunt dolore? Deserunt alias, maxime
+                    inventore omnis in, magni doloribus ad quam nobis labore laborum?<br><br>Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Assumenda odit laudantium, ad aperiam quibusdam veritatis nesciunt
+                    dolore? Deserunt alias, maxime inventore omnis in, magni doloribus ad quam nobis labore laborum?</p>
+                <a class="btn">see more</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- specail item section -->
+    <section id="food_section" class="center">
+        <div class="context_container center">
+            <div class="text_context center">
+                <h1 id="title">specail food</h1>
+            </div>
+            <div class="infoCard center">
+                <div class="center" id="foodCards">
+                    <!-- card in foodcard.js -->
+                </div>
+                <div>
+                    <div class="btn"><a href="#">see more</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- team section -->
+    <section id="team_section" class="center">
+        <div class="context_container center">
+            <div class="text_context center">
+                <h1 id="title">our team</h1>
+            </div>
+            <div class="infoCard center">
+                <div class="teamCards center">
+                    <!-- card in teamcard.js  -->
+                </div>
+                <div>
+                    <div class="btn"><a href="#">see more</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- customer section -->
+    <section id="customer_section" class="center">
+        <div class="context_container center">
+            <div class="text_context center">
+                <h1 id="title">testimonial</h1>
+            </div>
+            <div class="infoCard center">
+                <div class="testbtns center">
+                    <button class="prevBtn center"><i class="fa-solid fa-arrow-left-long"></i></button>
+                    <button class="nextBtn center"><i class="fa-solid fa-arrow-right-long"></i></button>
+                </div>
+                <div class="testcards center" id="testCards">
+                    <!-- script testimonial.js -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer center">
+        <p>made by mushfiqurnasim@gmail.com</p>
+    </footer>
+
+    <!-- script file link -->
+    <script src="script.js"></script>
+    <script src="slider.js"></script>
+    <script src="foodCon.js"></script>
+    <script src="teamcard.js"></script>
+    <script src="testimonial.js"></script>
+
+</body>
+
+</html>

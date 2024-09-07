@@ -1,0 +1,22 @@
+[
+  {
+    "food_name": "Salmon Salad",
+    "food_description": "Freshly grilled salmon served on a bed of crisp greens with a tangy lemon vinaigrette.",
+    "food_image": "image/slide/01.png"
+  },
+  {
+    "food_name": "Pan Fried Scallops",
+    "food_description": "Delicately seared scallops with a golden-brown crust, served with a rich butter sauce.",
+    "food_image": "image/slide/04.png"
+  },
+  {
+    "food_name": "Peach Blueberry Salad",
+    "food_description": "A refreshing mix of juicy peaches and blueberries, tossed with a light honey-mint dressing.",
+    "food_image": "image/slide/03.png"
+  },
+  {
+    "food_name": "Grilled Ribeye Steak",
+    "food_description": "Juicy and tender ribeye steak, grilled to perfection, served with a side of garlic mashed potatoes.",
+    "food_image": "image/slide/04.png"
+  }
+]

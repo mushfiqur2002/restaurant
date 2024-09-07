@@ -1,0 +1,33 @@
+[
+    {
+      "name": "John Doe",
+      "star": 5,
+      "image": "image/customer/02.jpeg",
+      "review": "The food was absolutely delicious! The service was great, and I'll definitely be coming back."
+    },
+    {
+      "name": "Jane Smith",
+      "star": 4,
+      "image": "image/customer/03.jpeg",
+      "review": "Great taste and presentation! Although the portion was a bit small, the flavors made up for it."
+    },
+    {
+      "name": "Michael Brown",
+      "star": 3,
+      "image": "image/customer/04.jpeg",
+      "review": "The food was good but took a little longer to arrive than expected. Otherwise, a good experience."
+    },
+    {
+      "name": "Emily Johnson",
+      "star": 5,
+      "image": "image/customer/05.jpeg",
+      "review": "Amazing food! The flavors were unique and mouthwatering. Highly recommend this place!"
+    },
+    {
+      "name": "Chris Lee",
+      "star": 4,
+      "image": "image/customer/02.jpeg",
+      "review": "The food was fresh and tasty. Good value for money, and the ambiance was cozy."
+    }
+  ]
+  

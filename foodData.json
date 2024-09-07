@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Spaghetti Carbonara",
+        "image": "image/food/spaghetti_carbonara.png",
+        "description": "Classic Italian pasta with creamy egg sauce, pancetta, and Parmesan.",
+        "price": 12.99
+    },
+    {
+        "name": "Margherita Pizza",
+        "image": "image/food/margherita_pizza.png",
+        "description": "Traditional pizza with fresh tomatoes, mozzarella, and basil.",
+        "price": 10.99
+    },
+    {
+        "name": "Caesar Salad",
+        "image": "image/food/caesar_salad.png",
+        "description": "Crisp romaine lettuce, Parmesan, and croutons with Caesar dressing.",
+        "price": 8.99
+    },
+    {
+        "name": "Grilled Salmon",
+        "image": "image/food/grilled_salmon.png",
+        "description": "Fresh salmon fillet grilled to perfection, served with lemon butter sauce.",
+        "price": 18.99
+    },
+    {
+        "name": "Beef Burger",
+        "image": "image/food/beef_burger.png",
+        "description": "Juicy beef patty with cheddar cheese, lettuce, and tomato in a toasted bun.",
+        "price": 11.99
+    },
+    {
+        "name": "Chicken Tacos",
+        "image": "image/food/chicken_tacos.png",
+        "description": "Soft tacos filled with seasoned grilled chicken, salsa, and avocado.",
+        "price": 9.99
+    },
+    {
+        "name": "Sushi Platter",
+        "image": "image/food/sushi_platter.png",
+        "description": "An assortment of fresh sushi rolls and nigiri with soy sauce and wasabi.",
+        "price": 24.99
+    },
+    {
+        "name": "Vegetable Stir Fry",
+        "image": "image/food/vegetable_stir_fry.png",
+        "description": "Mixed vegetables sautéed in soy sauce with garlic and ginger.",
+        "price": 9.49
+    },
+    {
+        "name": "BBQ Ribs",
+        "image": "image/food/bbq_ribs.png",
+        "description": "Tender pork ribs slathered in a smoky BBQ sauce, served with fries.",
+        "price": 19.99
+    },
+    {
+        "name": "Chocolate Cake",
+        "image": "image/food/chocolate_cake.png",
+        "description": "Rich and moist chocolate cake topped with velvety chocolate ganache.",
+        "price": 6.99
+    }
+]

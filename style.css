@@ -1,0 +1,691 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-family-1: "Oswald", sans-serif;
+    --font-family-2: "Nunito Sans", sans-serif;
+
+    --white: #FAF5E6;
+    --yellow: #FBBD0D;
+    --black: #2D2C2E;
+    --red: #FD1F4A;
+
+    --logo-wd: 2rem;
+    --nav-hg: 5rem;
+}
+
+body {
+    width: 100%;
+    max-width: 1280px;
+    height: 100%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* --- common --- */
+a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--black);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.context_container {
+    width: 100%;
+    max-width: 90%;
+}
+
+.btn {
+    padding: .7rem 1.5rem;
+    font-size: .9rem;
+    background: var(--yellow);
+    color: var(--black);
+    border: none;
+    outline: none;
+    border-radius: .2rem;
+}
+
+.btn:hover {
+    background: #eee;
+    box-shadow: 0px 0px 1px 1px var(--black);
+    color: var(--black);
+}
+#title{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+}
+i{
+    color: var(--black);
+}
+/* === nav START === */
+nav {
+    width: 100%;
+    max-width: 1280px;
+    height: var(--nav-hg);
+    position: sticky;
+    top: 0;
+    z-index: 111;
+    background: var(--black);
+}
+
+nav .context_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .context_container .logo {
+    width: auto;
+    height: auto;
+}
+
+nav .context_container .logo svg,
+nav .context_container .logo a {
+    fill: var(--yellow);
+    color: var(--yellow);
+}
+
+nav .context_container .logo a p {
+    font-size: var(--logo-wd);
+    font-family: var(--font-family-2);
+    font-weight: bold;
+}
+
+nav .context_container .link .link_container {
+    width: auto;
+    display: flex;
+    gap: 3rem;
+}
+
+nav .context_container .link .link_container ul {
+    list-style: none;
+    gap: 2rem;
+}
+
+nav .context_container .link .link_container ul li a {
+    font-family: var(--font-family-2);
+    color: var(--yellow);
+    font-size: .8rem;
+}
+
+nav .context_container .link .link_container ul li a.active {
+    color: var(--white);
+}
+nav .context_container .link .bookBtn a{
+    font-size: .8rem;
+}
+
+#sideBar,
+.openBar,
+.closeBar {
+    display: none;
+}
+
+/* === nav END === */
+
+/* === slide section START === */
+#slide_section {
+    width: 100%;
+    height: 80vh;
+    background: var(--black);
+}
+
+#slide_section .context_container #slider {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 55% 45%;
+}
+
+#slide_section .context_container .text_context {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    animation: slideInFromLeft 1s ease-in-out forwards;
+}
+
+#slide_section .context_container .text_context h1 {
+    color: var(--yellow);
+    font-family: var(--font-family-1);
+    font-size: clamp(2.8rem, 4vw + 1rem, 4.5rem);
+}
+
+#slide_section .context_container .text_context p {
+    color: var(--white);
+    font-family: var(--font-family-2);
+    font-size: clamp(.9rem, 2vw + .1rem, 1.2rem);
+}
+
+#slide_section .context_container .text_context .btn_context {
+    margin-top: 2rem;
+    gap: 1rem;
+}
+#slide_section .context_container .text_context .btn_context .btn {
+    padding: .5rem 1.5rem;
+}
+
+#slide_section .context_container .text_context .btn_context button svg {
+    fill: var(--black);
+}
+
+#slide_section .context_container .image_context {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    animation: slideInFromRight 1s ease-in-out;
+}
+
+#slide_section .context_container .image_context .image_box {
+    width: clamp(55%, 30vw + 10%, 100%);
+    height: auto;
+    aspect-ratio: auto 500/400;
+}
+
+#slide_section .context_container .image_context .image_box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/* === slide section END === */
+
+/* === about section START === */
+#about_section{
+    width: 100%;
+    height: 100%;
+    background: var(--white);
+}
+#about_section .context_container,
+#food_section .context_container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    place-items: center;
+    padding: 5rem 0;
+    gap: 1rem;
+    position: relative;
+}
+#about_section .context_container .image_context{
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+}
+#about_section .context_container .image_context img{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border: .5rem solid var(--red);
+    border-radius: .5rem;
+}
+#about_section .context_container .text_context{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+#about_section .context_container .text_context p{
+    width: 90%;
+    font-size: .8rem;
+    font-family: var(--font-family-2);
+}
+
+/* === about section END === */
+
+/* === food section START === */
+#food_section{
+    width: 100%;
+    height: 100%;
+    background: var(--black);
+}
+#food_section .context_container,
+#team_section .context_container,
+#customer_section .context_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-direction: column;
+    padding: 3rem 0;
+}
+#food_section .context_container .text_context,
+#team_section .context_container .text_context{
+    width: 100%;
+}
+#food_section .context_container .text_context #title{
+    color: var(--white);
+}
+#food_section .context_container .infoCard,
+#team_section .context_container .infoCard{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    gap: 3rem;
+}
+#food_section .context_container .infoCard #foodCards,
+#team_section .context_container .infoCard .teamCards {
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+#food_section .context_container .infoCard #foodCards .card,
+#team_section .context_container .infoCard .teamCards .card{
+    width: 250px;
+    height: 100%;
+    background: var(--white);
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: var(--font-family-2);
+    text-transform: capitalize;
+    border-radius: .5rem;
+    overflow: hidden;
+    flex: 1;
+    margin: 0 10px;
+}
+
+#food_section .context_container .infoCard #foodCards .card .image{
+    width: 100%;
+    height: 250px;
+}
+#food_section .context_container .infoCard  #foodCards .card .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#food_section .context_container .infoCard #foodCards .card .text{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 1rem .8rem;
+    gap: 1rem;
+}
+#food_section .context_container .infoCard #foodCards .card .text .info{
+    width: 100%;
+    justify-content: space-between;
+}
+#food_section .context_container .infoCard #foodCards .card .text .price{
+    color: var(--red);
+    font: bolder;
+    font-size: 1rem;
+    background: var(--yellow);
+    padding: .1rem .3rem;
+}
+#food_section .context_container .infoCard #foodCards .card .text .discription{
+    width: fit-content;
+    font-size: .9rem;
+}
+/* === food section END === */
+/* === team section START === */
+#team_section{
+    width: 100%;
+    height: 100%;
+    background: var(--white);
+}
+#team_section .context_container .infoCard .teamCards .card{
+    width: 300px;
+    height: 375px;
+    position: relative;
+    flex: none;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 1s cubic-bezier(.14,.72,.87,.64);
+}
+#team_section .context_container .infoCard .teamCards .card:hover .text{
+    bottom: 0;
+}
+#team_section .context_container .infoCard .teamCards .card .image{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#team_section .context_container .infoCard .teamCards .card .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#team_section .context_container .infoCard .teamCards .card .text{
+    width: 100%;
+    height: 45%;
+    background: rgba(0, 0, 0, .3);
+    backdrop-filter: blur(3px);
+    position: absolute;
+    bottom: -30%;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: var(--white);
+    transition: all 500ms cubic-bezier(.14,.72,.87,.64);
+}
+#team_section .context_container .infoCard .teamCards .card .text .info{
+    flex-direction: column;
+    gap: 1rem;
+}
+#team_section .context_container .infoCard .teamCards .card .text .info h1{
+    font-size: 2rem;
+    position: relative;
+}
+#team_section .context_container .infoCard .teamCards .card .text .info h1::before{
+    content: '';
+    width: 5px;
+    height: 15px;
+    background: var(--red);
+    top: 0;
+    
+}
+#team_section .context_container .infoCard .teamCards .card .text .info p{
+    font-size: 1.5rem;
+}
+#team_section .context_container .infoCard .teamCards .card .text .socail_links{
+    position: relative;
+    gap: .8rem;
+}
+#team_section .context_container .infoCard .teamCards .card .text .socail_links span {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--red);
+    color: var(--black);
+    transition: 200ms all ease-in-out;
+}
+#team_section .context_container .infoCard .teamCards .card .text .socail_links span i{
+    color: var(--black);
+    transition: 200ms all ease-in-out;
+    font-size: 1rem;
+}
+#team_section .context_container .infoCard .teamCards .card .text .socail_links span:hover {
+    width: 39px;
+    height: 39px;
+    background: var(--white);
+    color: var(--red);
+}
+#team_section .context_container .infoCard .teamCards .card .text .socail_links span:hover i{
+    font-size: .8rem;
+    color: var(--red);
+}
+/* === team section END === */
+/* === customer section START === */
+#customer_section{
+    width: 100%;
+    height: 100%;
+    background: var(--white);
+}
+#customer_section .context_container{
+    flex-direction: column;
+    position: relative;
+    font-family: var(--font-family-2);
+}
+#customer_section .context_container .infoCard{
+    width: 90%;
+    height: 400px;
+}
+#customer_section .context_container .infoCard .testbtns{
+    width: 90%;
+    justify-content: space-between;
+    position: absolute;
+}
+#customer_section .context_container .infoCard .testbtns .prevBtn,
+#customer_section .context_container .infoCard .testbtns .nextBtn{
+    background: transparent;
+    border: none;
+    outline: none;
+}
+#customer_section .context_container .infoCard .testbtns .prevBtn i,
+#customer_section .context_container .infoCard .testbtns .nextBtn i{
+    font-size: 3rem;
+
+}
+#customer_section .context_container .infoCard .testcards{
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+}
+#customer_section .context_container .infoCard .testcards .testcard{
+    width: 80%;
+    height: 100%;
+    background: #FBBD0D;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 1.5rem;
+    position: relative;
+}
+#customer_section .context_container .infoCard .testcards .testcard .info{
+    gap: .5rem;
+    flex-direction: column;
+    position: relative;
+    top: -55px;
+}
+#customer_section .context_container .infoCard .testcards .testcard .info .image{
+    width: 5rem;
+    height: 5rem;
+}
+#customer_section .context_container .infoCard .testcards .testcard .info .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: .5rem solid var(--white);
+}
+#customer_section .context_container .infoCard .testcards .testcard .info .basic h1{
+    font-size: 1.8rem;
+    text-transform: capitalize;
+}
+#customer_section .context_container .infoCard .testcards .testcard .info .basic div{
+    padding-top: .6rem;
+    display: flex;
+    gap: .5rem;
+}
+#customer_section .context_container .infoCard .testcards .testcard .info .basic div i{
+    font-size: 1.8rem;
+}
+#customer_section .context_container .infoCard .testcards .testcard .info .basic div i.red{
+    color: var(--red);
+}
+#customer_section .context_container .infoCard .testcards .testcard .text p{
+    font-size: 1.3rem;
+    padding: 0 3rem;
+}
+.footer{
+    width: 100%;
+    background: var(--black);
+    color: var(--white);
+    font-family: var(--font-family-2);
+}
+.footer p{
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+/* === animation === */
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+
+/* ==== media ====*/
+
+@media (max-width: 917px) {
+
+    /* common */
+    .context_container {
+        max-width: 95%;
+    }
+
+    /* nav */
+    .openBar,
+    .closeBar {
+        display: block;
+    }
+
+    nav .context_container .link {
+        flex-direction: row-reverse;
+        gap: 1rem;
+    }
+
+    nav .context_container .link .link_container .drop {
+        width: 400px;
+        height: 100vh;
+        position: fixed;
+        background: rebeccapurple;
+        top: 0;
+        right: 0;
+        display: none;
+    }
+
+    nav .context_container .link .link_container .drop.active {
+        display: inline;
+    }
+
+    nav .context_container .link .link_container .drop .closeBar {
+        padding: 1.5rem 1rem;
+    }
+
+    nav .context_container .link .link_container .drop ul {
+        display: flex;
+        flex-direction: column;
+    }
+    #food_section .context_container .infoCard #foodCards,
+    #team_section .context_container .infoCard .teamCards{
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    #food_section .context_container .infoCard #foodCards .card{
+        width: 350px;
+        flex: none;
+    }
+    /* nav */
+}
+
+@media (max-width: 500px) {
+
+    /* common */
+    .btn {
+        padding: .7rem 1rem;
+    }
+
+    #title{
+        position: absolute;
+        font-size: 2rem;
+        
+    }
+    #about_section .context_container .text_context #title{
+        top: 10px;
+    }
+
+    /* nav */
+    nav .context_container .link .link_container .drop {
+        width: 100%;
+    }
+
+    nav .context_container .logo a p {
+        font-size: 1.6rem;
+    }
+
+    /* slider secton */
+    #slide_section {
+        height: 100%;
+    }
+
+    #slide_section .context_container #slider {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        margin: 2rem 0;
+    }
+
+    #slide_section .context_container .text_context .btn_context {
+        margin-top: .5rem;
+    }
+    #about_section .context_container{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+    }
+    #about_section .context_container .image_context img{
+        width: 100%;
+        height: 300px;
+    }
+    #about_section .context_container .text_context{
+        padding-top: 1rem;
+    }
+    #food_section .context_container .infoCard #foodCards{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #food_section .context_container .infoCard #foodCards .card,
+    #team_section .context_container .infoCard .teamCards .card{
+        width: 100%;
+        margin: 0;
+    }
+    #customer_section .context_container .infoCard{
+        width: 100%;
+        position: relative;;
+    }
+    #customer_section .context_container .infoCard .testcards .testcard .info .basic h1{
+        font-size: 1.5rem;
+    }
+    #customer_section .context_container .infoCard .testcards .testcard{
+        width: 100%;
+    }
+    #customer_section .context_container .infoCard .testbtns{
+        position: absolute;
+        bottom: 15px;
+        z-index: 11;
+        width: 40%;
+    }
+    #customer_section .context_container .infoCard .testcards .testcard .text p{
+        padding: 0;
+        font-size: 1rem;
+    }
+    #customer_section .context_container .infoCard .testbtns .prevBtn i, 
+    #customer_section .context_container .infoCard .testbtns .nextBtn i{
+        font-size: 2rem;
+    }
+    #customer_section .context_container .infoCard .testcards .testcard .info .basic div i{
+        font-size: 1.2rem;
+    }
+    #food_section .context_container, #team_section .context_container, #customer_section .context_container{
+        gap: 5rem;
+    }
+}
