@@ -35,7 +35,7 @@ function showNav() {
                             </svg>
                         </label>
                         <ul class="center">
-                            <li><a href="index.html" class="nav-link">home</a></li>
+                            <li><a href="index.html" class="nav-link active">home</a></li>
                             <li><a href="about.html" class="nav-link">about</a></li>
                             <li><a href="service.html" class="nav-link">service</a></li>
                             <li><a href="menu.html" class="nav-link">menu</a></li>
